@@ -67,14 +67,14 @@ shinyServer(function(input, output, session){
   output$plot <- renderPlot({
     
     plot(vals$tgr1, vals$tgr2, xlim=c(-200,200), ylim=c(-200,200), pch=20, cex=4, col="gray60",
-         axes=FALSE, xlab= "TGR Reference", ylab="TGR Experimental", cex.lab=.8)
-    axis(1, las=1, at=c(-200,-100,0,100,200), lab=c("-200 %","-100 %","0 %","100 %","200 %"), cex.axis=.7, font=2)
-    axis(2, las=1, at=c(-200,-100,0,100,200), lab=c("-200 %","-100 %","0 %","100 %","200 %"), cex.axis=.7, font=2)
+         axes=FALSE, xlab= "TGR Reference", ylab="TGR Experimental", cex.lab=1.1)
+    axis(1, las=1, at=c(-200,-100,0,100,200), lab=c("-200 %","-100 %","0 %","100 %","200 %"), cex.axis=1, font=2)
+    axis(2, las=1, at=c(-200,-100,0,100,200), lab=c("-200 %","-100 %","0 %","100 %","200 %"), cex.axis=1, font=2)
     abline(h=0, v=0)
     abline(coef=as.vector(c(0,1)), col="orange", lty=2,lwd=2.5)
-    text(-200, -100, "orange line set for: \nTGR ref = TGR exp", col="orange", cex=.55, font=4,adj=0)
-    text(x=130, y=-105, 'DECREASE in TGR\n "Antitumor activity"', cex=.9, font=4, col="darkgreen")
-    text(x=-90, y=100, 'INCREASE in TGR\n "No antitumor activity"', cex=.9, font=4, col="red")
+    text(-200, -100, "orange line set for: \nTGR ref = TGR exp", col="orange", cex=1.1, font=4,adj=0)
+    text(x=130, y=-105, 'DECREASE in TGR\n "Antitumor activity"', cex=1.25, font=4, col="darkgreen")
+    text(x=-90, y=100, 'INCREASE in TGR\n "No antitumor activity"', cex=1.25, font=4, col="red")
     title("Variation of Tumor Growth Rate (TGR)\nacross the Reference and Experimental periods", font=2)
     
   })
