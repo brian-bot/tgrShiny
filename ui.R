@@ -1,6 +1,5 @@
 ## SHINY UI
 require(shiny)
-require(shinyIncubator)
 
 shinyUI(pageWithSidebar(
   
@@ -63,16 +62,16 @@ shinyUI(pageWithSidebar(
       h5(HTML("For example R code, <a href='https://github.com/chferte/TumorGrowthRate/blob/master/TGR_calculator.R' target='_blank'>visit this project's GitHub Repository</a>")),
       br(),
       h5("Notable references about TGR:"),
-      p("1: A simulation model of the natural history of human breast cancer. ",
+      p("1.  A simulation model of the natural history of human breast cancer. ",
          "Koscielny S, Tubiana M, Valleron AJ. ",
          "Br J Cancer. 1985 Oct;52(4):515-24. PubMed PMID: 4063132; PubMed Central PMCID: PMC1977243."),
-      p("2: Tumour growth rates and RECIST criteria in early drug development. ",
+      p("2.  Tumour growth rates and RECIST criteria in early drug development. ",
          "Gomez-Roca C, Koscielny S, Ribrag V, Dromain C, Marzouk I, Bidault F, Bahleda R, Ferté C, Massard C, Soria JC. ",
          "Eur J Cancer. 2011 Nov;47(17):2512-6. doi:10.1016/j.ejca.2011.06.012. Epub 2011 Jul 15. PubMed PMID: 21763126."),
-      p("3: Tumor Growth Rate (TGR) provides useful information to evaluate Sorafenib and Everolimus treatment in metastatic renal cell carcinoma (mRCC) patients. An integrated analysis of the TARGET and RECORD phase III trials data. ",
+      p("3.  Tumor Growth Rate (TGR) provides useful information to evaluate Sorafenib and Everolimus treatment in metastatic renal cell carcinoma (mRCC) patients. An integrated analysis of the TARGET and RECORD phase III trials data. ",
          "Ferté C, Koscielny S, Albiges L, Rocher L, Soria JC, Iacovelli R, Loriot Y, Fizazi K, Escudier B. ",
          "presented as Posted Discussion, GU Session, ASCO Annual meeting 2012. submitted for publication"),
-      p("4: Tumor Growth Rate (TGR) provides useful information for patients enrolled in phase I trials and yields clear specific drug profiles. ",
+      p("4.  Tumor Growth Rate (TGR) provides useful information for patients enrolled in phase I trials and yields clear specific drug profiles. ",
          "Ferté C, et al (manuscript in preparation). ",
          "presented as Posted Discussion, Developmental Therapeutics Session, ASCO Annual meeting 2013.")
     )

@@ -1,6 +1,5 @@
 ## SHINY SERVER
 require(shiny)
-require(shinyIncubator)
 
 shinyServer(function(input, output, session){
   
