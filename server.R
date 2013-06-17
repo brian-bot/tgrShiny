@@ -58,10 +58,10 @@ shinyServer(function(input, output, session){
   })
   
   output$tgrMessage1 <- renderText({
-    paste("TGR Reference Phase = ", round(vals$tgr1, 2), sep="")
+    paste("TGR Reference Period = ", round(vals$tgr1, 2), sep="")
   })
   output$tgrMessage2 <- renderText({
-    paste("TGR Experimental Phase = ", round(vals$tgr2, 2), sep="")
+    paste("TGR Experimental Period = ", round(vals$tgr2, 2), sep="")
   })
   
   output$plot <- renderPlot({
