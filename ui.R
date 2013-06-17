@@ -25,7 +25,9 @@ shinyUI(pageWithSidebar(
     submitButton(strong("Calculate TGR")),
     br(),
     br(),
-    plotOutput("logo", width="75%", height="25%")
+    plotOutput("logo", width="75%", height="25%"),
+    br(),
+    h6("Webpage created by:  Brian M. Bot & Charles Ferté")
   ),
   
   
