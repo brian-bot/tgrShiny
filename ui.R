@@ -25,7 +25,7 @@ shinyUI(pageWithSidebar(
     submitButton(strong("Calculate TGR")),
     br(),
     br(),
-    a(plotOutput("logo", width="75%", height="25%"), href="http://www.gustaveroussy.fr/doc/tgr_calculator/", target="_blank"),
+    a(plotOutput("logo", width="75%", height="25%"), href="http://www.gustaveroussy.fr/en", target="_blank"),
     br(),
     h6("Webpage created by:  Brian M. Bot & Charles Ferté")
   ),
